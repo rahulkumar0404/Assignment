@@ -1,0 +1,109 @@
+body{
+    background-image: url("../Todos/resources/photo-1420593248178-d88870618ca0.avif");
+}
+
+.container{
+   position: absolute;
+   height: 25pc;
+   width: 20pc;
+   margin: auto;
+   top: 0;
+   right: 0;
+   left:0;
+   bottom: 0;
+   backdrop-filter: blur(3px);
+   box-shadow: 0 0 55px black;
+}
+
+.addtext{
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    margin: auto;
+    top: 25px;
+    right: 0; left: 0;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.addBtn{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+.addBtn img{
+    position: absolute;
+    height: 40px;
+    margin: auto;
+    top: 25px; right: 0;
+    bottom: 0; left: 0;
+}
+
+.list{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    right: 0; left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.list::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.element{
+    position: relative;
+    height: fit-content;
+    width: 55%;
+    right: 0;
+    margin: 15px;
+    text-align: left;
+    transition: 0.2s;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    word-wrap: break-word;
+    border-radius: 2px;
+    padding-right: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.element:hover{
+    transform: scale(1.1);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.tick{
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+
+}
+
+.trash{
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    filter: grayscale(1);
+}
